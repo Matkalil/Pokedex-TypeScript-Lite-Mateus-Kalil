@@ -1,0 +1,30 @@
+{
+  "name": "pokedex-typescript-lite-mateus-kalil",
+  "version": "1.0.0",
+  "description": "Mini projeto de uma Pokédex com TypeScript",
+  "main": "dist/main.js",
+  "scripts": {
+    "start": "tsx src/main.ts",
+    "dev": "tsx watch src/main.ts",
+    "build": "tsc",
+    "start:dist": "node dist/main.js",
+    "typecheck": "tsc --noEmit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Matkalil/Pokedex-TypeScript-Lite-Mateus-Kalil.git"
+  },
+  "keywords": ["pokedex", "typescript", "nodejs", "pokeapi"],
+  "author": "Mateus Kuhnen Kalil",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Matkalil/Pokedex-TypeScript-Lite-Mateus-Kalil/issues"
+  },
+  "homepage": "https://github.com/Matkalil/Pokedex-TypeScript-Lite-Mateus-Kalil#readme",
+  "devDependencies": {
+    "@types/node": "^26.6.2",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
