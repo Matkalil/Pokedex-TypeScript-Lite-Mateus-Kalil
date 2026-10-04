@@ -1,4 +1,5 @@
 import type { PokemonResumo } from "../models/Pokemon";
+import { formatarPokemon } from "../utils/textFormatters";
 
 export class CatalogoPokemon {
     private pokemons: PokemonResumo[] = [];
@@ -11,7 +12,19 @@ export class CatalogoPokemon {
         return;
     }
     this.pokemons.push(pokemon);
-    console.log(`[OK] ${pokemon.nome} adicionado ao catálogo.`)
+    console.log(`[OK] ${pokemon.nome} adicionado ao catálogo.`);
 
     }
+
+    listar(): void {
+        if(this.pokemons.length === 0) {
+            console.log(`[AVISO] Catálogo vazio.`);
+            return;
+        } 
+        console.log(`Catálogo atual:`);
+        this.pokemons.forEach((pokemon) => {
+            console.log(formatarPokemon(pokemon));
+        });
+    }
 }
+
