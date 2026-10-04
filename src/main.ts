@@ -32,6 +32,29 @@
 
 // main();
 
+//import { PokeApiService } from "./services/PokeApiService";
+//import { CatalogoPokemon } from "./services/CatalogoPokemon";
+
+// async function main(): Promise<void> {
+//   const api = new PokeApiService();
+//   const catalogo = new CatalogoPokemon();
+
+//   catalogo.listar(); // deve mostrar o aviso de catálogo vazio
+
+//   const pikachu = await api.buscarPokemon("pikachu");
+//   if (pikachu !== null) {
+//     catalogo.adicionar(pikachu);
+//     catalogo.adicionar(pikachu);
+//   }
+
+//   const charmander = await api.buscarPokemon("charmander");
+//   if (charmander !== null) {
+//     catalogo.adicionar(charmander);
+//   }
+
+//   catalogo.listar(); // deve mostrar os dois Pokémon
+// }
+// main();
 import { PokeApiService } from "./services/PokeApiService";
 import { CatalogoPokemon } from "./services/CatalogoPokemon";
 
@@ -39,7 +62,7 @@ async function main(): Promise<void> {
   const api = new PokeApiService();
   const catalogo = new CatalogoPokemon();
 
-  catalogo.listar(); // deve mostrar o aviso de catálogo vazio
+  catalogo.listar();
 
   const pikachu = await api.buscarPokemon("pikachu");
   if (pikachu !== null) {
@@ -52,6 +75,11 @@ async function main(): Promise<void> {
     catalogo.adicionar(charmander);
   }
 
-  catalogo.listar(); // deve mostrar os dois Pokémon
+  catalogo.listar();
+
+  catalogo.remover(25);  // deve dar [OK]
+  catalogo.remover(999); // deve dar [AVISO]
+  catalogo.listar();     // deve mostrar só o charmander
 }
+
 main();
