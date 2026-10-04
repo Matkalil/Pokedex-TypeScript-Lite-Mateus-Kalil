@@ -3,7 +3,6 @@ import type { PokemonResumo } from "../models/Pokemon";
 export class CatalogoPokemon {
     private pokemons: PokemonResumo[] = [];
 
-
     adicionar(pokemon: PokemonResumo): void {
      const jaExiste = this.pokemons.some((item) => item.id === pokemon.id);
     //some: true or false do array; verifica se já existe Pokemon
