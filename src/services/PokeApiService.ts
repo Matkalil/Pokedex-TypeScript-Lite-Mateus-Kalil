@@ -10,7 +10,7 @@ export class PokeApiService {
     try {
       const resposta = await fetch(url);
       if (!resposta.ok) {
-        console.log(`[ERRO] Pokémon não encontrado: ${nomeFormatado}.`);
+        console.log(`[ERRO] Pokémon não encontrado: ${nomeFormatado}`);
         return null;
       }
 
