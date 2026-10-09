@@ -230,7 +230,7 @@ As tarefas foram organizadas no GitHub Projects, com as colunas Backlog, A Fazer
 
 ## Vídeo de apresentação
 
-[Assistir ao vídeo](COLE_AQUI_O_LINK_DO_VIDEO)
+[Assistir ao vídeo](https://drive.google.com/file/d/1AmmUxQTQzN2Dr1n0jbzppiDZU-3Mfaog/view?usp=sharing)
 
 ## Melhorias futuras
 
