@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    // Estrutura de arquivos
+    "rootDir": "./src",
+    "outDir": "./dist",
+
+    // Ambiente Node.js
+    "module": "nodenext",
+    "target": "esnext",
+    "lib": ["esnext"],
+    "types": ["node"],
+
+    // Saída
+    "sourceMap": true,
+
+    // Tipagem rígida
+    "strict": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+
+    // Recomendados
+    "isolatedModules": true,
+    "noUncheckedSideEffectImports": true,
+    "moduleDetection": "force",
+    "skipLibCheck": true
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}
