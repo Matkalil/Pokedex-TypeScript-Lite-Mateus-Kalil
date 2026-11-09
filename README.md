@@ -240,3 +240,13 @@ As tarefas foram organizadas no GitHub Projects, com as colunas Backlog, A Fazer
 - Exibir HP, ataque e defesa
 - Filtrar o catálogo por tipo de Pokémon
 - Validar em tempo de execução os dados recebidos da API
+
+## Uso de IA no desenvolvimento
+
+Utilizei o Claude (IA da Anthropic) como apoio durante o projeto para:
+
+- Organizar o planejamento e a estrutura do projeto
+- Revisar o código e sugerir melhorias
+- Padronizar a documentação
+
+Todas as sugestões foram revisadas e testadas por mim antes de entrar no código.
