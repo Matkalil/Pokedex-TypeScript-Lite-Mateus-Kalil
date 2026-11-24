@@ -1,4 +1,30 @@
 # Pokédex TypeScript Lite
+## English
+ 
+**Pokédex TypeScript Lite** is a command-line Pokédex built with Node.js and TypeScript. It fetches Pokémon data from the public [PokeAPI](https://pokeapi.co/), maps each response to a simplified object (name, types, height and weight) and keeps a local in-memory catalog that blocks duplicates and supports listing and removing entries.
+ 
+**Highlights**
+ 
+- Layered architecture (controllers, services, models and utils) with constructor-based dependency injection
+- Asynchronous HTTP calls with `fetch` and `async/await`, handling "Pokémon not found" (404) and network failures
+- TypeScript in strict mode, with typed interfaces and classes
+- Git Flow workflow: feature branches, pull requests, semantic commits, a release tag and a Kanban board on GitHub Projects
+**Tech stack:** Node.js · TypeScript · tsx · PokeAPI
+ 
+**Run it**
+ 
+```bash
+git clone https://github.com/Matkalil/Pokedex-TypeScript-Lite-Mateus-Kalil.git
+cd Pokedex-TypeScript-Lite-Mateus-Kalil
+npm install
+npm run start
+```
+ 
+Built for SENAI's Carreira Tech back-end program (Module 1) and graded 100/100. The full documentation below is in Portuguese.
+ 
+---
+ 
+## Português
 
 Mini projeto de uma Pokédex com Node.js e TypeScript, executada pelo terminal.
 
